@@ -21,9 +21,6 @@ auto iterToInsertIntoSortedDeque(const std::deque<std::string>& sortedDeque,
 
     } while (leftBound < rightBound);
 
-    if (leftBound == sortedDeque.size())
-        return sortedDeque.end();
-
     return std::next(sortedDeque.begin(), leftBound);
 }
 
